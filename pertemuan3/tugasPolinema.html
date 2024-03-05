@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript to HTML</title>
+</head>
+<body>
+    <script>
+        var pp = "polinema";
+        var output = "";
+        for (var i = 0; i < pp.length; i++) {
+            output += "&nbsp;".repeat(i) + pp.charAt(i) + "<br>";
+        }
+        document.write(output);
+    </script>
+</body>
+</html>

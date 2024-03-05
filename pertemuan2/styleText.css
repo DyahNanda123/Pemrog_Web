@@ -1,0 +1,6 @@
+.tulisan_warna{
+    color: blue;
+    text-align: center; /* Menengahkan teks */
+    text-decoration: underline; /* Menambahkan garis bawah */
+    letter-spacing: 5px; /* Memberikan jarak antar karakter sebesar 5px */
+}
