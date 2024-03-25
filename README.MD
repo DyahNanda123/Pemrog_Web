@@ -9,3 +9,5 @@ Untuk contoh eror nya seperti berikut:
 
 
 <img src = "eror2.png">
+
+Mohon maaf pak, untuk pertemuan 4 saya (PHP) telat mengirim di git maupun di LMS. Karena git saya terkendala pak, masih dibagian branch nya. Dan LMS baru bisa di akses.. Terimakasih pak
