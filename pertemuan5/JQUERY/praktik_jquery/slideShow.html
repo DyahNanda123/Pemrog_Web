@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleSlideShow.css"> 
+    <script src='jquery-3.7.1.js'></script> <!--Memuat library jQuery dari file eksternal.-->
+    <!--Memulai blok skrip JavaScript yang akan dieksekusi untuk melacak indeks gambar yang ditampilkan. 
+        Fungsi showNextImage() akan dijalankan setiap 3 detik (3000 milidetik) 
+        untuk menampilkan gambar berikutnya dalam slideshow.-->
+    <script>
+        // Mendefinisikan fungsi showNextImage()
+        // Variabel i digunakan untuk melacak indeks gambar 
+        // Fungsi showNextImage() akan dijalankan setiap 3 detik
+        var i = 0;
+        $(document).ready(function () {
+            $('.slidertitle, #slider img').hide(); 
+            showNextImage();
+            setInterval(showNextImage, 3000);
+        });
+
+        function showNextImage() { // Mendefinisikan fungsi showNextImage()
+            i++;
+            // Setiap gambar akan muncul dengan efek fade in selama 1.1 detik, ditahan selama 1.1 detik, 
+            // lalu fade out selama 1.1 detik.
+            $('#sliderImage' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100); 
+            $('#title' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100); 
+            if (i == 3) {
+                i = 0;
+            }
+        };
+    </script>
+</head>
+<body>
+    <!--Menampilkan div dengan id "slider" yang berisi gambar-gambar dan judul-judul slideshow-->
+    <div id="slider">
+        <img id="sliderImage1" src="img/gambar1.jpg"> 
+        <div class="slidertitle" id="title1">Gambar 1</div>
+
+        <img id="sliderImage2" src="img/gambar2.jpg"> 
+        <div class="slidertitle" id="title2">Gambar 2</div>
+
+        <img id="sliderImage3" src="img/gambar3.jpg"> 
+        <div class="slidertitle" id="title3">Gambar 3</div> 
+    </div>
+</body>
+</html>

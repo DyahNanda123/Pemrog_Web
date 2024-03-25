@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css"> <!--Mengaitkan dokumen dengan stylesheet eksternal untuk styling,menggunakan jQuery UI-->
+    <script src="jquery-3.7.1.js"></script> <!--Memuat library jQuery dari file eksternal.-->
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script> <!--Memuat library jQuery UI dari file eksternal.-->
+    <script>
+        $(function() { // memulai fungsi
+            $( "#date_ex" ).datepicker(); // Menginisialisasi elemen dengan ID "date_ex" sebagai datepicker 
+        });
+    </script>
+    </head>
+    <body>
+        <div>Selected Date: <input type="text" id="date_ex"></div> <!--Membuat sebuah div yang berisi teks "Selected Date:" dan input dengan tipe "text" yang akan dijadikan datepicker.-->
+    </body>
+</html>

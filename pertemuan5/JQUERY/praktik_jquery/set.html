@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.7.1.js"></script> <!--Memuat library jQuery dari file eksternal.-->
+        <!--Memulai blok skrip JavaScript yang akan dieksekusi setelah dokumen HTML telah sepenuhnya dimuat. 
+            Skrip ini menambahkan fungsi click pada tombol-tombol dengan id "btn1", "btn2", dan "btn3", yang masing-masing 
+            akan mengubah teks, HTML, dan nilai input dari elemen-elemen yang ditentukan-->
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#test1").text("<b>Hello World</b>"); //Mengubah teks dari elemen dengan id "test1" menjadi "<b>Hello World</b>
+                });
+                $("#btn2").click(function(){
+                    $("#test2").html("<b>Hello World</b>"); // Mengubah konten HTML dari elemen dengan id "test2" menjadi "<b>Hello World</b>"
+                });
+                $("#btn3").click(function(){
+                    $("#test3").val("Polinema"); // Mengubah nilai input dari elemen dengan id "test3" menjadi "Polinema".
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!--Menampilkan beberapa elemen HTML seperti paragraf, input, dan tombol pada halaman-->
+        <p id="test1">This is first paragraph.</p>
+        <p id="test2">This is <b> another </b></p>
+
+        <p>Your Name: <input type="text" id="test3"></p>
+
+        <button id="btn1">Set Text</button>
+        <button id="btn2">Set HTML</button>
+        <button id="btn3">Set Value</button>
+    </body>
+</html>

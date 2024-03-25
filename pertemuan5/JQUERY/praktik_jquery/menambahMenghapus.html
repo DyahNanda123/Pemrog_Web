@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleTable.css"/> <!--Mengaitkan dokumen dengan stylesheet eksternal untuk styling, 
+            menggunakan file "styleTable.css".-->
+        <script src="jquery-3.7.1.js"></script> <!--Memuat library jQuery dari file eksternal.-->
+        <!--Memulai blok skrip JavaScript yang akan dieksekusi setelah dokumen HTML telah sepenuhnya dimuat. Skrip ini menangani tindakan 
+            untuk menambah dan menghapus baris pada tabel.-->
+        <script>
+            $(document).ready(function(){
+                //menambah baris
+                $(".add-row").click(function(){
+                    var name = $("#name").val();
+                    var email = $("#email").val();
+                    var markup = "<tr><td><input type='checkbox' name='record'></td><td>"
+                        + name + "</td><td>" + email + "</td><tr>";
+                            $("table tbody").append(markup);
+                });
+
+                // menghapus baris yang di centang 
+                $(".delete-row").click(function(){
+                    $("table tbody").find('input[name="record"]').each(function(){
+                        if($(this).is(":checked")){
+                            $(this).parents("tr").remove();
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!--Menampilkan sebuah formulir dengan dua input untuk nama dan alamat email, 
+            serta sebuah tombol untuk menambahkan baris ke dalam tabel.-->
+        <form>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email Address">
+            <input type="button" class="add-row" value="Add Row">
+        </form>
+        <!--Menampilkan sebuah tabel dengan header dan satu baris data contoh, yang 
+            memiliki kolom untuk memilih baris, nama, dan alamat email.-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>Tony Stark</td>
+                    <td>tonystark@mail.com</td>
+                </tr>
+            </tbody>
+    </table>
+    <!--Menampilkan sebuah tombol untuk menghapus baris yang dipilih dari tabel-->
+    <button type="button" class="delete-row">Delete Row</button>
+    </body>
+</html>

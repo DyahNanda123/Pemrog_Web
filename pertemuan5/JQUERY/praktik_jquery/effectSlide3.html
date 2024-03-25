@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleSlide.css"/> <!--Mengaitkan dokumen dengan stylesheet eksternal untuk styling, menggunakan file "styleSlide.css".-->
+        <script src="jquery-3.7.1.js"></script> <!--Memuat library jQuery dari file eksternal.-->
+        <script>
+            $(document).ready(function(){ // Menjalankan fungsi 
+                $("#flip").click(function(){ // Menjalankan animasi slide toggle pada elemen dengan ID "kotak2" 
+                    $("#kotak2").slideToggle("slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="flip">Klik untuk Efek Slide</div> <!--div dengan ID "flip" yang digunakan sebagai tombol untuk animasi slide toggle.-->
+        <div id="kotak2">Selamat Pagi</div> <!--div dengan ID "kotak2" yang berisi teks "Selamat Pagi".-->
+    </body>
+</html>

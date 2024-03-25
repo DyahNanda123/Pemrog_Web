@@ -1,0 +1,9 @@
+.box{
+    width: 100px; /* Menentukan lebar elemen box sebesar 100 piksel.*/
+    height: 100px; /* Menentukan tinggi elemen box sebesar 100 piksel. */
+    background: #9d7ede; /*  Menentukan warna latar belakang elemen box menjadi #9d7ede (warna ungu).*/
+    margin-top: 30px; /* Memberikan jarak 30 piksel di bagian atas elemen box terhadap elemen di atasnya. */
+    border-style: solid; /*Menentukan jenis garis tepi elemen box menjadi garis lurus.*/
+    border-color: #6f40ce; /*Menentukan warna garis tepi elemen box menjadi #6f40ce (warna ungu tua).*/
+    position:relative; /*Menentukan posisi elemen box relatif terhadap posisi normalnya */
+}
