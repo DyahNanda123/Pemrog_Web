@@ -1,0 +1,55 @@
+/* Kontainer untuk formulir unggah */
+.upload-form-container {
+    max-width: 400px;
+    margin: 0 auto; padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    }
+h2 {
+
+     /* Gaya untuk judul */
+    margin: 0;
+    font-size: 24px; 
+    color: #333;
+}
+.file-input-container {
+     /* Kontainer untuk input file */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.file-input {
+    /* Sembunyikan input file */
+    display: none;
+}
+.file-label {
+     /* Gaya untuk label file */
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.upload-button {
+        /* Gaya untuk tombol unggah */
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    /* Opacity to make it appear faded */
+}
+.upload-button:disabled {
+     /* Gaya untuk tombol unggah yang dinonaktifkan */
+    background: #ccc;
+    cursor: not-allowed;
+}
+.upload-status {
+    /* Gaya untuk status unggahan */
+    margin-top: 20px;
+    font-weight: bold;
+}
