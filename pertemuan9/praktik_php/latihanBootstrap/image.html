@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pengenalan Bootstrap</title> <!-- Judul halaman web -->
+    <!-- Menyisipkan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Menyisipkan jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Menyisipkan Popper.js (diperlukan untuk beberapa komponen Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Menyisipkan Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container"> <!-- Membuat container untuk mengatur layout -->
+        <h2>Pengaturan Gambar pada Bootstrap</h2>
+        <div class="row row-cols-1"> <!-- Membuat baris dengan satu kolom pada tampilan mobile -->
+            <div class="col"> <!-- Membuat kolom -->
+                <img src="tower.jpg" class="rounded" alt="gambar round"> <!-- Menampilkan gambar dengan border bulat -->
+            </div>
+            <div class="col"> <!-- Membuat kolom -->
+                <img src="tower.jpg" class="rounded-circle" alt="gambar circle"> <!-- Menampilkan gambar dengan border lingkaran -->
+            </div>
+            <div class="col"> <!-- Membuat kolom -->
+                <img src="tower.jpg" class="img-thumbnail" alt="gambar thumbnail"> <!-- Menampilkan gambar dengan border thumbnail -->
+            </div>
+            <div class="col"> <!-- Membuat kolom -->
+                <img src="tower.jpg" class="img-fluid" alt="gambar thumbnail"> <!-- Menampilkan gambar dengan ukuran fleksibel -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

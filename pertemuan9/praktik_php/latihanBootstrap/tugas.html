@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Pengenalan Booststrap</title> <!-- Judul halaman  -->
+    <!-- Menyisipkan Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Menyisipkan javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Membuat navbar gelap -->
+        <a class="navbar-brand" href="#">Pengenalan Booststrap</a> <!-- Menampilkan navbar -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Menampilkan tombol toggle -->
+            <span class="navbar-toggler-icon"></span> <!-- Menampilkan ikon -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Membuat area collapsible -->
+            <ul class="navbar-nav mr-auto"> <!-- Membuat daftar navigasi -->
+                <li class="nav-item active"> <!-- Membuat item navigasi aktif -->
+                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a> <!-- Menampilkan tautan -->
+                </li>
+                <li class="nav-item"> <!-- Membuat item navigasi -->
+                    <a class="nav-link" href="#">About</a> <!-- Menampilkan tautan -->
+                </li>
+                <li class="nav-item"> <!-- Membuat item navigasi -->
+                    <a class="nav-link" href="#">Contact</a> <!-- Menampilkan tautan -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5"> <!-- Membuat container untuk mengatur layout -->
+        <div class="row justify-content-center"> <!-- Membuat baris dan mengatur konten di tengah -->
+            <div class="col-md-6"> <!-- Membuat kolom dengan lebar medium untuk perangkat dengan lebar layar sedang -->
+                <img src="tower.jpg" class="img-fluid" alt="Gambar"> <!-- Menampilkan gambar yang responsif -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid"> <!-- Membuat jumbotron yang responsif -->
+        <div class="container text-center"> <!-- Membuat container untuk mengatur layout -->
+            <h1 class="display-3">Pengenalan Booststrap</h1> <!-- Menampilkan judul -->
+            <p class="lead">Selamat Datang!</p> <!-- Menampilkan teks besar -->
+            <hr class="my-4"> <!-- Menampilkan garis pemisah -->
+            <p>Ini adalah contoh halaman web statis dengan Bootstrap.</p> <!-- Menampilkan teks -->
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> <!-- Menampilkan tombol besar -->
+            </p>
+        </div>
+    </div>
+</body>
+</html>

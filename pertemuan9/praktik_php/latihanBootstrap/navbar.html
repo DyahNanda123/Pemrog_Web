@@ -1,0 +1,41 @@
+<!--Index praktikum Melalui CDN-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"> <!-- Mendefinisikan set karakter dokumen HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Menyesuaikan tampilan untuk perangkat mobile -->
+    <title>Pengenalan Bootstrap</title> <!-- Judul halaman web -->
+    <!-- Menyisipkan Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Menyisipkan javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Membuat Navbar</h2> <!-- judul -->
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light"> <!-- Membuat navbar -->
+        <ul class="navbar-nav"> <!-- Membuat daftar navigasi -->
+            <li class="nav-item active"> <!-- Membuat item navigasi aktif -->
+                <a class="nav-link" href="#">Active</a> <!-- Menampilkan tautan -->
+            </li>
+            <li class="nav-item"> <!-- Membuat item navigasi -->
+                <a class="nav-link" href="#">Link</a> <!-- Menampilkan tautan -->
+            </li>
+            <li class="nav-item"> <!-- Membuat item navigasi -->
+                <a class="nav-link" href="#">Link</a> <!-- Menampilkan tautan -->
+            </li>
+            <li class="nav-item"> <!-- Membuat item navigasi -->
+                <a class="nav-link disabled" href="#">Disabled</a> <!-- Menampilkan tautan nonaktif -->
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -22,15 +22,48 @@ $no = isset($_POST["no"]) ? htmlspecialchars($_POST["no"]) : "";
 $hp = isset($_POST["hp"]) ? htmlspecialchars($_POST["hp"]) : "";
 
 // Set session data
+// Set session data
 $_SESSION['nisn'] = $nisn;
 $_SESSION['nama_siswa'] = $nama;
 $_SESSION['nik'] = $nik;
+$_SESSION['noKip'] = $noKip;
+$_SESSION['noKKS'] = $noKKS;
+$_SESSION['asal'] = $asal;
+$_SESSION['th'] = $th;
+$_SESSION['tempatLahir'] = $tempatLahir;
+$_SESSION['tglLahir'] = $tglLahir;
+$_SESSION['jk'] = $jk;
+$_SESSION['agama'] = $agama;
+$_SESSION['alamat'] = $alamat;
+$_SESSION['provinsi'] = $provinsi;
+$_SESSION['kab'] = $kab;
+$_SESSION['pos'] = $pos;
+$_SESSION['email'] = $email;
+$_SESSION['no'] = $no;
+$_SESSION['hp'] = $hp;
 
 // Set cookies
+// Set cookies
 $expire = time() + (60 * 60 * 24 * 30); // 30 days
-setcookie('nisn', $nisn, $expire);
-setcookie('nama_siswa', $nama, $expire);
-setcookie('nik', $nik, $expire);
+setcookie('nisn', $nisn, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('nama_siswa', $nama, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('nik', $nik, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('noKip', $noKip, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('noKKS', $noKKS, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('asal', $asal, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('th', $th, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('tempatLahir', $tempatLahir, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('tglLahir', $tglLahir, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('jk', $jk, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('agama', $agama, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('alamat', $alamat, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('provinsi', $provinsi, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('kab', $kab, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('pos', $pos, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('email', $email, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('no', $no, $expire, "/", "", true, true); // Secure, HttpOnly
+setcookie('hp', $hp, $expire, "/", "", true, true); // Secure, HttpOnly
+
 
 // Menangani unggahan file gambar
 $gambarName = isset($_FILES['gambar']['name']) ? $_FILES['gambar']['name'] : '';
